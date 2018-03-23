@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="shortcut icon" href="log.jpg" type"jpg" >
+</head>
+<body>
+	<h1>Personal data</h1>
+
+  	<form autocomplete="on" action="date.php">
+   	<p>Your first name: <input type="text" name="fName"></p>
+   	<p>Your second name: <input type="text" name="sName"></p>
+   	<p>Enter the country<input type="text" name="coutry"></p>
+   	<p>Emaill: <input type="email" name="em"></p>
+   	<p><b>Your sex: </b></p>
+  	<p><input type="radio" name="sex" value="m">Man<Br>
+  	<input type="radio" name="sex" value="wm">Woman</p>
+  	<p>Age: <input type="namber" value ="18" min="0" max="255" step="1"></p>
+   	<p><input type="submit" value="Send"></p>
+  	</form>
+
+  	<form>
+  	<p>Do you lik CCG?</p>
+    <p>Yes-------No----Don`t Know</p>
+  	<p><input type="range"  min="1" max="3"></p>
+  	  	
+	<p>Rate the game from 0 to 10 stars</p>
+	<input type="range" list="tickmarks">
+	<datalist id="tickmarks">
+  	<option value="0">
+  	<option value="10">
+  	<option value="20">
+  	<option value="30">
+  	<option value="40">
+  	<option value="50">
+  	<option value="60">
+  	<option value="70">
+  	<option value="80">
+  	<option value="90">
+  	<option value="50">
+  	<option value="100">
+	</datalist>
+	
+  	<p>Select the server on which you want to play.</p>
+    <p>
+    	<select multiple size="any">
+    	<option>Europe</option>
+    	<option>Asia</option>
+    	<option>North America</option>
+    	<option>East America</option>
+    	</select>
+	</p>
+	<p><input type="image" src="log.gif"></p>
+ 	</form>
+
+
+
+	
+ 	<hr>
+ 	<h1>Login to the system</h1>
+  	<form autocomplete="on" action="userData.php">
+   	<p>Nickname: <input name="user"></p>
+   	<p>Password: <input name="pass" type="password"></p>
+  	<p>Key file: <input type="file" name="anyFile"></p>
+  	<p><input type="submit" value="Отправить"></p>
+  	</form>
+	<p><textarea>/notebook</textarea></p>
+</body>
+</html>
